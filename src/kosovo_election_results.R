@@ -19,7 +19,7 @@ election_2019_data <- election_data %>%
 election_2019_data <- transform(election_2019_data, ï..party_short = reorder(ï..party_short, -percentage))
  
 ggplot(data=election_2017_data, aes(x=ï..party_short, y=percentage, fill=ï..party_short)) +
-  labs(title="Rezultatet e zgjedhjeve të 2017-ës sipas koalicioneve të 2019-ës", x="Partia ose Koalicionet",
+  labs(title="Rezultatet e zgjedhjeve të 2017-ës sipas koalicioneve të 2017-ës", x="Partia ose Koalicionet",
        y="Përqindja e votave të përgjithshme", fill="Partia ose Koalicionet")+
   geom_bar(stat="identity") +
   theme_minimal() +
